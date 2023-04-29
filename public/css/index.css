@@ -64,3 +64,13 @@ p:nth-child() {
 }
 
 /* Селектор наявності значення атрибута */
+.border-img[alt~='random'] {
+    border: 5px solid green;
+    border-radius: 10px;
+}
+
+/* Селектор наявності значення атрибута, перероюлено для карточки а не для фото */
+.card[class~='img'] {
+    border: 5px solid rgb(93, 32, 158);
+    border-radius: 10px;
+}

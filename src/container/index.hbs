@@ -78,14 +78,20 @@
 
     <h1 class='card-title'>Lesson 5, Selectors - part 2</h1>
     <div class='card p-3 mt-3'>
-        {{! Селектор атрибута  }}
+        {{! <p>Селектор атрибута</p> }}
         <input class='input-dark' required />
-        {{! Селектор значення атрибута }}
+        {{! <p>Селектор значення атрибута</p> }}
         <input class='input-dark' type='number' />
     </div>
 
-    {{! Селектор наявності значення атрибута }}
-    <div class='card p-3 mt-3'>
-        <img src='https://picsum.photos/300' height='300px' alt='image random' />
+    <div class='card p-3 mt-3 img'>
+        {{! <p>Селектор наявності значення атрибута</p> }}
+        <img src='https://picsum.photos/300' height='300px' class='border-img' alt='image card random' />
+    </div>
+
+    {{! <p>Або ми хочемо задати бордер для карточки а не для фото, тоді ми дописуємо до каоточки клас img, в CSS міняємо значення</p> }}
+    <div class='card p-3 mt-3 img'>
+        {{! <p>Селектор наявності значення атрибута</p> }}
+        <img src='https://picsum.photos/300' height='300px' class='border-img' alt='image card random' />
     </div>
 </main>
