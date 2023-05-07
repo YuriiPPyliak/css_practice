@@ -74,3 +74,34 @@ p:nth-child() {
     border: 5px solid rgb(93, 32, 158);
     border-radius: 10px;
 }
+
+/* Створюємо селектор префіксу значення атрибута по тегу button */
+button[class|='btn'] {
+    background: red;
+    margin-top: 10px;
+}
+
+/* Створюємо cелектор початку значення атрибута */
+a[class^='btn'] {
+    background: pink;
+    margin-top: 10px;
+    border: none;
+}
+
+p::first-letter {
+    font-size: 20px;
+}
+
+p::before {
+    display: block;
+    content: '';
+    border: 3px solid black;
+    margin-top: 25px;
+}
+
+p::after {
+    display: block;
+    content: '';
+    border: 3px solid tomato;
+    margin-bottom: 25px;
+}
