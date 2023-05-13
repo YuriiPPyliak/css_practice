@@ -1,0 +1,108 @@
+{{! 
+Це код container файлу для index сторінки, 
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/" }}
+
+<main class='p-5'>
+    {{!-- <section class='card'>
+        <h1 class='card-header'>Lesson 4, part 2 - Selectors</h1>
+        <div class='card-body'>
+            {{! <div class='mb-5'>
+                <h2>USB hub Type C 12 в 1 HDMI VGA AUX 3.5 mm</h2>
+                <button type='button' class='btn btn-primary'>Купити</button>
+            </div> }}
+            Селектор ідентифікатора
+            <div>
+                <h1 id='title'>Hello World!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ex aliquid a quae quis possimus, adipisci facere ullam laudantium fuga!</p>
+            </div>
+            Селектор нащадка
+            <div class='box'>
+                <h1 id='title'>Hello World!</h1>
+                <div>
+                    <strong>Lorem, ipsum dolor.</strong>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ex aliquid a quae quis possimus, adipisci facere ullam laudantium fuga!</p>
+                <strong>css and html</strong>
+                <div>
+                    <div>
+                        <strong>today is the good day</strong>
+                    </div>
+                </div>
+            </div>
+            Сестринський селектор
+            <div>
+                <h1 id='title'>Hello World!</h1>
+                <div class='wrap'>
+                    <strong>Lorem, ipsum dolor.</strong>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ex aliquid a quae quis possimus, adipisci facere ullam laudantium fuga!</p>
+                <strong>css and html</strong>
+                <div>
+                    <div>
+                        <strong>today is the good day</strong>
+                    </div>
+                </div>
+            </div>
+            <section class='box'>
+                <h1 id='title'>Hello World!</h1>
+                <div class='wrap'>
+                    <em class='zip'>Lorem, ipsum dolor.</em>
+                </div>
+                <p>Lorem ipsum dolor </p>
+                <em>css and html</em>
+                <div>
+                    <div>
+                        <em>today is the good day</em>
+                    </div>
+                </div>
+            </section>
+            <div>
+                <h2>Hello world!</h2>
+                <p>Hello Yurii</p>
+                <b>today is a good day</b>
+                <br />
+                <b>today is a bad day</b>
+                <br />
+                <i>saturday</i>
+                <br />
+            </div>
+            <div class='my-5'>
+                <p class='item'>item</p>
+                <p class='item'>item2</p>
+                <p class='item'>item3</p>
+                <p class='item'>item4</p>
+                <p class='item'>item5</p>
+            </div>
+        </div>
+    </section> --}}
+
+    <h1 class='card-title'>Lesson 5, Selectors - part 2</h1>
+    <div class='card p-3 mt-3'>
+        {{! <p>Селектор атрибута</p> }}
+        <input class='input-dark' required />
+        {{! <p>Селектор значення атрибута</p> }}
+        <input class='input-dark' type='number' />
+    </div>
+
+    <div class='card p-3 mt-3 img'>
+        {{! <p>Селектор наявності значення атрибута</p> }}
+        <img src='https://picsum.photos/300' height='300px' class='border-img' alt='image card random' />
+    </div>
+
+    {{! <p>Або ми хочемо задати бордер для карточки а не для фото, тоді ми дописуємо до каоточки клас img, в CSS міняємо значення</p> }}
+    <div class='card p-3 mt-3 img'>
+        {{! <p>Селектор наявності значення атрибута</p> }}
+        <img src='https://picsum.photos/300' height='300px' class='border-img' alt='image card random' />
+
+        {{! Селектор префіксу значення атрибута }}
+        <button class='btn'>Click me</button>
+        <br />
+        {{! Селектор початку значення атрибута }}
+        <a class='btn btn-secondary' href='https://picsum.photos/300' target='_blank'>Click me</a>
+    </div>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div>Hello world</div>
+    </div>
+</main>

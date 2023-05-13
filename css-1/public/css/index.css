@@ -1,0 +1,107 @@
+html {
+    max-width: 720px;
+}
+
+body {
+    background: #fff;
+}
+
+/* Селектор ідентифікатора
+#title {
+    background: pink;
+}
+
+Селектор нащадка
+div strong {
+    color: pink;
+}
+
+Сестринський селектор 
+.wrap + p {
+    color: aqua;
+}
+
+h1 ~ em {
+    color: red;
+}
+
+h1 > .zip {
+    color: red;
+}
+
+b:first-of-type {
+    color: red;
+}
+
+b:last-of-type {
+    font-size: 30px;
+}
+
+p:only-of-type {
+    background: tomato;
+}
+
+.item:nth-child(5) {
+    font-weight: bold;
+}
+
+p:nth-child() {
+    color: red;
+} */
+
+.card-title {
+    background: pink;
+}
+
+/* Селектор атрибута */
+.input-dark[required] {
+    background: #579ea3;
+}
+
+/* Селектор значення атрибута */
+.input-dark[type='number'] {
+    background: #ae8ed5;
+}
+
+/* Селектор наявності значення атрибута */
+.border-img[alt~='random'] {
+    border: 5px solid green;
+    border-radius: 10px;
+}
+
+/* Селектор наявності значення атрибута, перероюлено для карточки а не для фото */
+.card[class~='img'] {
+    border: 5px solid rgb(93, 32, 158);
+    border-radius: 10px;
+}
+
+/* Створюємо селектор префіксу значення атрибута по тегу button */
+button[class|='btn'] {
+    background: red;
+    margin-top: 10px;
+}
+
+/* Створюємо cелектор початку значення атрибута */
+a[class^='btn'] {
+    background: pink;
+    margin-top: 10px;
+    border: none;
+}
+
+p::first-letter {
+    font-size: 20px;
+}
+
+p::before {
+    display: block;
+    content: '';
+    border: 3px solid black;
+    margin-top: 25px;
+}
+
+p::after {
+    display: block;
+    content: '';
+    border: 3px solid tomato;
+    margin-bottom: 25px;
+}
