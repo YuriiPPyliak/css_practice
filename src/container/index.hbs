@@ -1,7 +1,6 @@
-{{! 
-Це код container файлу для index сторінки, 
+{{!
+Це код container файлу для index сторінки,
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/" }}
-
 <main class='p-5'>
     {{!-- <section class='card'>
         <h1 class='card-header'>Lesson 4, part 2 - Selectors</h1>
@@ -75,7 +74,6 @@
             </div>
         </div>
     </section> --}}
-
     <h1 class='card-title'>Lesson 5, Selectors - part 2</h1>
     <div class='card p-3 mt-3'>
         {{! <p>Селектор атрибута</p> }}
@@ -83,25 +81,23 @@
         {{! <p>Селектор значення атрибута</p> }}
         <input class='input-dark' type='number' />
     </div>
-
     <div class='card p-3 mt-3 img'>
         {{! <p>Селектор наявності значення атрибута</p> }}
         <img src='https://picsum.photos/300' height='300px' class='border-img' alt='image card random' />
     </div>
-
     {{! <p>Або ми хочемо задати бордер для карточки а не для фото, тоді ми дописуємо до каоточки клас img, в CSS міняємо значення</p> }}
     <div class='card p-3 mt-3 img'>
         {{! <p>Селектор наявності значення атрибута</p> }}
         <img src='https://picsum.photos/300' height='300px' class='border-img' alt='image card random' />
-
         {{! Селектор префіксу значення атрибута }}
         <button class='btn'>Click me</button>
         <br />
         {{! Селектор початку значення атрибута }}
         <a class='btn btn-secondary' href='https://picsum.photos/300' target='_blank'>Click me</a>
     </div>
-
     <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
         <p>Lorem ipsum dolor sit amet.</p>
     </div>
 </main>
