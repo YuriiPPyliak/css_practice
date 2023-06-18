@@ -1,13 +1,13 @@
 <div class='page'>
     <div class='page_content'>
-        <header class='header'>
-            <div class='header_logo'>
+        <header class='header row g-0'>
+            <div class='header_logo col-3'>
                 <span class='badge text-bg-primary'>L</span>
             </div>
-            <div class='header_nav'>
-                Nav
+            <div class='header_nav col-9'>
+                {{> nav list=header isVertical=true}}
             </div>
         </header>
-        {{!-- {{> divider}} --}}
+        {{> divider}}
     </div>
 </div>
