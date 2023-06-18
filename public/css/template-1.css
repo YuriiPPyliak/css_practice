@@ -1,3 +1,22 @@
-body {
-    background: pink;
+.page {
+    background: #fff;
+}
+
+.page_content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 24px;
+}
+
+.header_logo {
+    font-size: 20px;
+}
+
+.divider {
+    margin: 0;
+    height: 1px;
+    background: #dee2e6;
 }
