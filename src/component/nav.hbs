@@ -1,0 +1,14 @@
+<div class='nav {{#if isVertical}}nav_vartical{{/if}}'>
+    {{#each list}}
+        <a href='{{url}}' class='nav_Link'>{{text}}</a>
+    {{/each}}
+</div> 
+
+{{#if isVertical}}
+    <div class='nav nav_vertical'>
+		{{else}}
+		<div class="nav">
+			
+		</div>
+    </div>
+{{/if}}
