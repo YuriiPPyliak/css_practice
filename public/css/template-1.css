@@ -16,12 +16,31 @@
 }
 
 .divider {
-    margin: 0;
+    margin: 0 auto;
+    max-width: 960px;
     height: 1px;
     background: #dee2e6;
 }
 
 .nav {
+    display: block;
 }
-.nav_Link {
+
+.nav_link {
+    color: #343a40;
+    font-style: 16px;
+    text-decoration: none;
+}
+
+.nav_link:hover {
+    text-decoration: underline;
+    color: blueviolet;
+}
+
+.nav_vertical > .nav_link {
+    display: block;
+}
+
+.nav_inline > .nav_link:not(:last-child) {
+    margin-right: 24px;
 }
