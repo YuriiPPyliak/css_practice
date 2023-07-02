@@ -1,14 +1,16 @@
-<div class='nav {{#if isVertical}}nav_vartical{{/if}}'>
+<div class='nav {{#if isVertical}}nav_vertical{{else}}nav_inline{{/if}}'>
     {{#each list}}
-        <a href='{{url}}' class='nav_Link'>{{text}}</a>
+    <a href='{{url}}' class='nav_Link'>{{text}}</a>
     {{/each}}
-</div> 
+</div>
 
-{{#if isVertical}}
-    <div class='nav nav_vertical'>
-		{{else}}
-		<div class="nav">
-			
-		</div>
-    </div>
+{{!-- {{#if isVertical}}
+<div class='nav nav_vertical'>
+    {{else}}
+    <div class='nav'>
 {{/if}}
+            {{#each list}}
+            <a href='{{url}}' class='nav_link'>{{text}}</a>
+            {{/each}}
+    </div>
+</div> --}}
