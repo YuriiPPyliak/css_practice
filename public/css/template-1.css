@@ -11,8 +11,8 @@
     padding: 24px;
 }
 
-.header_logo {
-    font-size: 20px;
+.logo {
+    font-size: 17px;
 }
 
 .divider {
@@ -43,4 +43,21 @@
 
 .nav_inline > .nav_link:not(:last-child) {
     margin-right: 24px;
+}
+
+.nav_vertical > .nav_link:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.header_nav_right {
+    margin-left: auto;
+    width: fit-content;
+}
+
+.page_block:not(:last-of-type) {
+    margin-bottom: 80px;
+}
+
+.footer {
+    padding: 24px;
 }

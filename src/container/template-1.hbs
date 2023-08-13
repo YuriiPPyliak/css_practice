@@ -1,14 +1,27 @@
 <div class='page'>
     <div class='page_content'>
-        <header class='header row g-0'>
-            <div class='header_logo col-3'>
-                <span class='badge text-bg-primary'>L</span>
-            </div>
-            <div class='header_nav col-9'>
-                {{> nav list=header isVertical=true}}
-                {{> nav list=header }}
-            </div>
-        </header>
-        {{> divider}}
+        <div class="page_block">
+            <header class='header row g-0'>
+                <div class="col-3">
+                    {{> logo}}
+                </div>
+                
+                <div class='header_nav col-9'>
+                    {{!-- {{> nav list=header isVertical=true}} --}}
+                    <div class="header_nav_right">
+                        {{> nav list=header }}
+                    </div>
+                </div>
+            </header>
+            {{> divider}}
+        </div>
+        <div class="page_block">
+            {{> divider}}
+            <footer class="row footer ">
+                <div class="col-3">
+                    {{> logo}}
+                </div>
+            </footer>
+        </div>
     </div>
 </div>
